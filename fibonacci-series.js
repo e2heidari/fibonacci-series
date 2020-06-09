@@ -1,4 +1,5 @@
 const fibonacci = function () {
+    var text = "";
     let x = 0;
     let y = 1;
     let z = 0;
@@ -9,8 +10,11 @@ const fibonacci = function () {
         z = x + y;
         x = y;
         y = z;
-        document.getElementById("numbers").innerHTML += z;
+        text += z + " ";
+        document.getElementById("numbers").innerHTML = text;
+
     }
+
     Answer = z
     document.getElementById("answer").innerHTML = Answer;
 }
