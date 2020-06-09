@@ -9,6 +9,7 @@ const fibonacci = function () {
         z = x + y;
         x = y;
         y = z;
+        document.getElementById("numbers").innerHTML += z;
     }
     Answer = z
     document.getElementById("answer").innerHTML = Answer;
